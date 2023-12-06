@@ -1,5 +1,95 @@
 .mainbg{
-    background-image: url('../public/img/mario.jpg');
-    height: 700px;
-    width: 95%;
+    background-image: url('/public/img/sonicjpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 750px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: 0;
+    padding-top: 5%;
+    & h1 {
+        font-size: 2rem;
+        color: azure;
+        text-align: center;
+        display: flex;
+        z-index: 1;
+        margin-left: 15%;
+        position: absolute;
+        margin-top: 10%;
+    }
 }
+
+
+.text-section {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 40px;
+    color: grey;
+    z-index: 1;
+    
+}
+
+.text-left, .text-right {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    font-size: 5rem;
+    background: linear-gradient(to right, #063d76, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.mainsuite{
+    background-color: #001c42;
+    height: 800px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+.moment{
+    color: azure;
+    font-family: 'SEGA LOGO FONT', sans-serif;
+    margin-left: 5%;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+}
+
+    .card-img-top {
+        height: 300px; 
+        object-fit: cover; 
+        font-family: 'Courier New', Courier, monospace;
+    }    
+
+ .container{
+    padding-top: 3%;
+ }   
+
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: display 0.3s ease-in-out; 
+  }
+  
+  .dropdown-item {
+    padding: 8px 12px;
+    display: block;
+    transition: background-color 0.3s ease-in-out; /* Transition de couleur de fond */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa; /* Couleur de fond au survol */
+  }
+  

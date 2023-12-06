@@ -1,0 +1,32 @@
+/* Styles pour le carrousel */
+#carouselExample {
+    max-width: 1000px; /* Ajustez la largeur maximale selon vos besoins */
+    margin: auto; /* Centrer le carrousel sur la page */
+  }
+  
+  .carousel-item img {
+    max-height: 600px; /* Ajustez la hauteur maximale des images selon vos besoins */
+    width: auto;
+    margin: auto; /* Centrer les images dans le carrousel */
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Arrière-plan semi-transparent pour le texte */
+    padding: 10px;
+    width: 100%; /* Ajuster la largeur selon vos besoins */
+    text-align: left; /* Aligner le texte à gauche */
+    position: absolute;
+    bottom: 0; /* Aligner le texte en bas du carrousel */
+  }
+  
+  /* Styles pour les flèches du carrousel */
+/* Styles pour les flèches du carrousel */
+.carousel-control-prev,
+.carousel-control-next {
+  color: #ff0000 !important; /* Changez la couleur selon vos préférences, avec !important */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: #00ff00 !important; 
+}

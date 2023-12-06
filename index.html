@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/public/css/app.css">
   <title>Document</title>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
 </head>
 <body>
   <header>
     <section>
     <nav class="navbar navbar-expand-lg navbar-custom">
-      <a class="navbar-brand" href="#">VGR Video Game Review</a>
+      <a class="navbar-brand" href="#">Game Critique Hub</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,7 +24,13 @@
             <a class="nav-link" href="#">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Jeux/Plateforme</a>
+            <a class="nav-link" href="#" id="jeux-plateforme">Jeux/Plateforme</a>
+            <div id="dropdown-menu" class="dropdown-menu" style="display: none;">
+                <a class="dropdown-item" href="#">Playstation</a>
+                <a class="dropdown-item" href="#">Nintendo</a>
+                <a class="dropdown-item" href="#">Xbox</a>
+                <a class="dropdown-item" href="#">PC</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Forum</a>
@@ -38,14 +48,89 @@
 
   <main>
     <section class="mainbg">
+      <div><h1>L'Univers des Jeux en Revue</h1></div>
+      <div class="text-section">
+          <div class="text-left">GAMING</div>
+          <div class="text-right">Review</div>
+      </div>
+  </section>
 
-    </section>
+  <section class="mainsuite">
+    <div><p class="moment">En ce moment ...</p></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                  <img src="/public/img/gta6.webp" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                      <p class="card-text">"Ca m'a franchement mis mal à l'aise" Le premier trailer de GTA 6 m'a déçu et vous allez très vite comprendre pourquoi !</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/public/img/finalavif.avif" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Ce personnage de Final Fantasy 7 Rebirth aura une tout autre dimension : pour une fois, les fans vont apprécier le ...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/public/img/maxresdefault.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lego Insiders Fortnite : comment avoir le skin Lego gratuit sur le jeu de Epic Games ?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sectionfin">
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/public/img/wow.jpg" class="d-block w-100 mx-auto" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>World of Warcraft</h5>
+          <p>La guerre intérieure, questions-réponses</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/public/img/thelastwebp.webp" class="d-block w-100 mx-auto" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>The Last of Us Part II Remastered</h5>
+          <p>date de sortie, modes de jeu, toutes les infos</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/public/img/silent.jpg" class="d-block w-100 mx-auto" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Silent Hill 2 (2024)</h5>
+          <p>LE REMAKE DE KONAMI SORTIRA EN 2024</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon text-white" aria-hidden="true"></span>
+      <span class="sr-only">Précédent</span>
+    </a>
+    
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+      <span class="carousel-control-next-icon text-white" aria-hidden="true"></span>
+      <span class="sr-only">Suivant</span>
+    </a>
+    
+  </div>
+</section>
+
   </main>
 
 
   <footer>
 
   </footer>
-  <script type="module" src="/public/scripts/script.js"></script>
+ <script type="module" src="/public/scripts/main.js"></script>
 </body>
 </html>

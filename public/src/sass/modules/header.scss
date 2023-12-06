@@ -1,5 +1,5 @@
 header{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     border-radius: 10px;
@@ -9,13 +9,16 @@ header{
 .navbar-nav{
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
     padding: 0;
+    font-size: 1.6rem;
 }
 
-.navbar-custom {
-    background-image: linear-gradient(to right, #3d1d20, #ac866c);
-    margin-top: 20px;
-    border-radius: 10px;
+.navbar {
+    background: linear-gradient(to right, #063d76, #063d76);
+
+
 }
 
 .navbar-custom .navbar-brand,
@@ -42,10 +45,10 @@ header{
 .form-inline .form-control {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 10px;    
 }
 
 .navbar-brand {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     margin-left: 10px;
 }
