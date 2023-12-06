@@ -1,0 +1,51 @@
+header{
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 10px;
+}
+
+
+.navbar-nav{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar-custom {
+    background-image: linear-gradient(to right, #3d1d20, #ac866c);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+    
+}
+.btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+    margin-right: 30px;
+}
+
+.btn-outline-success:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.form-inline .form-control {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    font-size: 1.4em;
+    margin-left: 10px;
+}
