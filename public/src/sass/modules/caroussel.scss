@@ -19,7 +19,6 @@
     bottom: 0; /* Aligner le texte en bas du carrousel */
   }
   
-  /* Styles pour les flèches du carrousel */
 /* Styles pour les flèches du carrousel */
 .carousel-control-prev,
 .carousel-control-next {
@@ -28,5 +27,12 @@
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  color: #00ff00 !important; 
+  color: #00ff00 !important; /* Changez la couleur au survol selon vos préférences, avec !important */
+}
+
+.sectionfin{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    & p {
+        font-style: italic;
+    }
 }

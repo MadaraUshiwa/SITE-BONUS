@@ -1,136 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/public/css/app.css">
-  <title>Document</title>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/app.css" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <section>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <a class="navbar-brand" href="#">Game Critique Hub</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="jeux-plateforme"
+                  >Jeux/Plateforme</a
+                >
+                <div
+                  id="dropdown-menu"
+                  class="dropdown-menu"
+                  style="display: none"
+                >
+                  <a class="dropdown-item" href="#">Playstation</a>
+                  <a class="dropdown-item" href="#">Nintendo</a>
+                  <a class="dropdown-item" href="#">Xbox</a>
+                  <a class="dropdown-item" href="#">PC</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Forum</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Rechercher..."
+                aria-label="Rechercher"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Rechercher
+              </button>
+            </form>
+          </div>
+        </nav>
+      </section>
+    </header>
 
-</head>
-<body>
-  <header>
-    <section>
-    <nav class="navbar navbar-expand-lg navbar-custom">
-      <a class="navbar-brand" href="#">Game Critique Hub</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="jeux-plateforme">Jeux/Plateforme</a>
-            <div id="dropdown-menu" class="dropdown-menu" style="display: none;">
-                <a class="dropdown-item" href="#">Playstation</a>
-                <a class="dropdown-item" href="#">Nintendo</a>
-                <a class="dropdown-item" href="#">Xbox</a>
-                <a class="dropdown-item" href="#">PC</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Forum</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
-      </form>
-      </div>
-    </nav>
-  </section>
-
-  </header>
-
-  <main>
-    <section class="mainbg">
-      <div><h1>L'Univers des Jeux en Revue</h1></div>
-      <div class="text-section">
+    <main>
+      <section class="mainbg">
+        <div><h1>L'Univers des Jeux en Revue</h1></div>
+        <div class="text-section">
           <div class="text-left">GAMING</div>
           <div class="text-right">Review</div>
-      </div>
-  </section>
+        </div>
+      </section>
 
-  <section class="mainsuite">
-    <div><p class="moment">En ce moment ...</p></div>
-    <div class="container">
-        <div class="row">
+      <section class="mainsuite">
+        <div><p class="moment">En ce moment ...</p></div>
+        <div class="container">
+          <div class="row">
             <div class="col-md-4">
-                <div class="card h-100">
-                  <img src="/public/img/gta6.webp" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                      <p class="card-text">"Ca m'a franchement mis mal à l'aise" Le premier trailer de GTA 6 m'a déçu et vous allez très vite comprendre pourquoi !</p>
-                  </div>
+              <div class="card h-100">
+                <img
+                  src="/public/img/gta6.webp"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    "Ca m'a franchement mis mal à l'aise" Le premier trailer de
+                    GTA 6 m'a déçu et vous allez très vite comprendre pourquoi !
+                  </p>
                 </div>
+              </div>
             </div>
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="/public/img/finalavif.avif" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Ce personnage de Final Fantasy 7 Rebirth aura une tout autre dimension : pour une fois, les fans vont apprécier le ...</p>
-                    </div>
+              <div class="card h-100">
+                <img
+                  src="/public/img/finalavif.avif"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Ce personnage de Final Fantasy 7 Rebirth aura une tout autre
+                    dimension : pour une fois, les fans vont apprécier le ...
+                  </p>
                 </div>
+              </div>
             </div>
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="/public/img/maxresdefault.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Lego Insiders Fortnite : comment avoir le skin Lego gratuit sur le jeu de Epic Games ?</p>
-                    </div>
+              <div class="card h-100">
+                <img
+                  src="/public/img/maxresdefault.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lego Insiders Fortnite : comment avoir le skin Lego gratuit
+                    sur le jeu de Epic Games ?
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<section class="sectionfin">
-  <div id="carouselExample" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/public/img/wow.jpg" class="d-block w-100 mx-auto" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5>World of Warcraft</h5>
-          <p>La guerre intérieure, questions-réponses</p>
+      <section class="sectionfin">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/public/img/wow.jpg"
+                class="d-block w-100 mx-auto"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>World of Warcraft</h5>
+                <p>La guerre intérieure, questions-réponses</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/public/img/thelastwebp.webp"
+                class="d-block w-100 mx-auto"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>The Last of Us Part II Remastered</h5>
+                <p>date de sortie, modes de jeu, toutes les infos</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/public/img/silent.jpg"
+                class="d-block w-100 mx-auto"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>Silent Hill 2 (2024)</h5>
+                <p>LE REMAKE DE KONAMI SORTIRA EN 2024</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExample"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon text-white"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Précédent</span>
+          </a>
+
+          <a
+            class="carousel-control-next"
+            href="#carouselExample"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon text-white"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Suivant</span>
+          </a>
         </div>
+      </section>
+      <section class="sectionvideo">
+        <div class="container">
+          <div class="video-container">
+            <iframe width="95%" height="95%" src="https://www.youtube.com/embed/W76LgnRWJWQ?si=xdHnKUPzys-ffjFZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="text-container">
+            <h3>Faites trembler la terre. Éventrez les cieux. Incarnez la force de destruction des plus puissants guerriers jamais apparus dans l'univers DRAGON BALL !</h3>
+            <br>
+            <p>DRAGON BALL: Sparking! ZERO reprend le gameplay effréné de la série Budokai Tenkaichi et l'emmène vers des sommets inégalés. DRAGON BALL: Sparking! ZERO propose un nombre phénoménal de personnages jouables, chacun avec leurs capacités, transformations et techniques signatures. Déchaînez la rage de vaincre qui vous habite et livrez des batailles acharnées dans des arènes qui se désagrègent et réagissent à votre puissance.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>
+          © 2024 Votre Entreprise. Tous les droits sont réservés pour Saikyo.
+        </p>
+        <p>
+          <a href="#">Politique de confidentialité</a> |
+          <a href="#">Conditions d'utilisation</a>
+        </p>
       </div>
-      <div class="carousel-item">
-        <img src="/public/img/thelastwebp.webp" class="d-block w-100 mx-auto" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5>The Last of Us Part II Remastered</h5>
-          <p>date de sortie, modes de jeu, toutes les infos</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="/public/img/silent.jpg" class="d-block w-100 mx-auto" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5>Silent Hill 2 (2024)</h5>
-          <p>LE REMAKE DE KONAMI SORTIRA EN 2024</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon text-white" aria-hidden="true"></span>
-      <span class="sr-only">Précédent</span>
-    </a>
-    
-    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-      <span class="carousel-control-next-icon text-white" aria-hidden="true"></span>
-      <span class="sr-only">Suivant</span>
-    </a>
-    
-  </div>
-</section>
-
-  </main>
-
-
-  <footer>
-
-  </footer>
- <script type="module" src="/public/scripts/main.js"></script>
-</body>
+    </footer>
+    <script type="module" src="/public/scripts/main.js"></script>
+  </body>
 </html>
